@@ -1,0 +1,4 @@
+# This is the robots.txt file for Keltify.
+
+User-agent: *
+Allow: /
