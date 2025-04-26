@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://marsha.dev/sitemap.xml
+Sitemap: https://keltify.com/sitemap.xml
