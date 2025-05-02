@@ -33,7 +33,6 @@
         let lang = params.get("lang");
 
         if (!lang) {
-            // Si aucune langue dans l'URL, on prend celle du navigateur
             const browserLang = navigator.language || navigator.userLanguage;
             lang = browserLang.startsWith("en") ? "en" : "fr";
         }
