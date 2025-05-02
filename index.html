@@ -24,34 +24,26 @@
                     <p class="text-sm text-[#92989C]">|</p>
                     <a id="legal-link" class="text-xs text-[#C7C7C7] hover:opacity-75" href="notice"></a>
                 </div>
-
-                <div class="mt-6">
-                    <a id="lang-toggle" class="text-xs text-[#7F7F7F] underline" href="?lang=en">English version</a>
-                </div>
             </div>
         </div>
     </div>
 
     <script>
         const params = new URLSearchParams(window.location.search);
-        const lang = params.get("lang") || "fr";
+        const lang = params.get("lang") || "fr"; // par défaut: français
 
         const translations = {
             fr: {
                 title: "On se voit bientôt.",
                 desc: "Nous construisons actuellement notre plateforme pour mieux vous servir. Merci pour votre compréhension et votre patience. Le site sera disponible prochainement.",
                 privacy: "Politique de confidentialité",
-                legal: "Mentions légales",
-                toggle: "English version",
-                toggleLink: "?lang=en"
+                legal: "Mentions légales"
             },
             en: {
                 title: "See you soon.",
                 desc: "We are currently building our platform to serve you better. Thank you for your understanding and patience. The website will be available soon.",
                 privacy: "Privacy Policy",
-                legal: "Legal Notice",
-                toggle: "Version française",
-                toggleLink: "?lang=fr"
+                legal: "Legal Notice"
             }
         };
 
@@ -61,11 +53,8 @@
         document.getElementById("main-desc").textContent = t.desc;
         document.getElementById("privacy-link").textContent = t.privacy;
         document.getElementById("legal-link").textContent = t.legal;
-        document.getElementById("lang-toggle").textContent = t.toggle;
-        document.getElementById("lang-toggle").href = t.toggleLink;
 
-        // Change la balise <html lang="">
-        document.documentElement.lang = lang;
+        document.documentElement.lang = lang; // <html lang="...">
     </script>
 </body>
 </html>
