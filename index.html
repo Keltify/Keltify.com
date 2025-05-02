@@ -30,7 +30,7 @@
 
     <script>
         const params = new URLSearchParams(window.location.search);
-        const lang = params.get("lang") || "fr"; // par défaut: français
+        const lang = params.get("lang") || "fr";
 
         const translations = {
             fr: {
@@ -54,7 +54,7 @@
         document.getElementById("privacy-link").textContent = t.privacy;
         document.getElementById("legal-link").textContent = t.legal;
 
-        document.documentElement.lang = lang; // <html lang="...">
+        document.documentElement.lang = lang;
     </script>
 </body>
 </html>
