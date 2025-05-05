@@ -21,6 +21,10 @@
     -webkit-tap-highlight-color: transparent
 }
 
+.scale {
+    transform: scale(1.05);
+}
+
 body {
     margin: 0;
     line-height: inherit;
