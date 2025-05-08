@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+Disallow: /privacy-policy
+Disallow: /legal-notice
+
 Sitemap: https://keltify.com/sitemap.xml
