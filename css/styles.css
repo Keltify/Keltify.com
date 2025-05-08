@@ -29,6 +29,15 @@ body {
     margin: 0;
     line-height: inherit;
     background-color: #121212;
+    ::-moz-selection {
+  color: #121212;
+  background: white;
+}
+
+::selection {
+  color: #121212;
+  background: white;
+}
 }
 
 hr {
