@@ -21,7 +21,7 @@
             <div class="text-center">
                 <img alt="Keltify" width="55" height="55" class="mx-auto block" src="/placeholder.jpg"/>
 
-                <h1 id="main-title" class="mt-8 font-title text-base font-medium text-white lg:text-lg"></h1>
+                <h1 id="main-name" class="mt-8 font-title text-base font-medium text-white lg:text-lg"></h1>
                 <p id="main-desc" class="mx-auto mt-2 text-pretty text-sm text-[#92989C] md:max-w-[80%] lg:max-w-[60%]"></p>
 
                 <div class="mt-8 flex items-center justify-center space-x-4">
@@ -77,13 +77,13 @@
 
         const translations = {
             fr: {
-                title: "On se voit bientôt.",
+                name: "John Doe",
                 desc: "Nous construisons actuellement notre plateforme pour mieux vous servir. Merci pour votre compréhension et votre patience. Le site sera disponible prochainement.",
                 privacy: "Politique de confidentialité",
                 legal: "Mentions légales"
             },
             en: {
-                title: "See you soon.",
+                name: "John Doe",
                 desc: "We are currently building our platform to serve you better. Thank you for your understanding and patience. The website will be available soon.",
                 privacy: "Privacy Policy",
                 legal: "Legal Notice"
@@ -92,7 +92,7 @@
 
         const t = translations[lang] || translations.fr;
 
-        document.getElementById("main-title").textContent = t.title;
+        document.getElementById("main-name").textContent = t.name;
         document.getElementById("main-desc").textContent = t.desc;
         document.getElementById("privacy-link").textContent = t.privacy;
         document.getElementById("legal-link").textContent = t.legal;
