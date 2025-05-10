@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="mt-12 text-left">
-                                <h2 class="text-sm font-semibold uppercase tracking-wide text-gray-200">Autres pages</h2>
+                                <h2 id="main-mylinks" class="text-sm font-semibold uppercase tracking-wide text-gray-200"></h2>
                                 <ul class="mt-4 divide-y divide-gray-200" role="list">
                                       <!-- 1 -->  <li class="border-none">
                                         <a href="/x">
@@ -114,12 +114,14 @@
             fr: {
                 name: "John Doe",
                 desc: "Créateur de contenu",
+                mylinks: "Mes liens",
                 privacy: "Politique de confidentialité",
                 legal: "Mentions légales"
             },
             en: {
                 name: "John Doe",
                 desc: "Content Creator",
+                mylinks: "My links",
                 privacy: "Privacy Policy",
                 legal: "Legal Notice"
             }
@@ -129,6 +131,7 @@
 
         document.getElementById("main-name").textContent = t.name;
         document.getElementById("main-desc").textContent = t.desc;
+        document.getElementById("main-mylinks").textContent = t.mylinks;
         document.getElementById("privacy-link").textContent = t.privacy;
         document.getElementById("legal-link").textContent = t.legal;
 
